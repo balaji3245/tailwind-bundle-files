@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Repository</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:
+      radial-gradient(circle at top left,#2563eb 0%,transparent 30%),
+      radial-gradient(circle at bottom right,#7c3aed 0%,transparent 30%),
+      #0f172a;
+      overflow:hidden;
+      padding:30px;
+    }
+
+    .glass-card{
+      position:relative;
+      width:100%;
+      max-width:850px;
+      padding:60px;
+      border-radius:30px;
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.12);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      box-shadow:
+      0 10px 40px rgba(0,0,0,0.45),
+      inset 0 1px 1px rgba(255,255,255,0.08);
+      text-align:center;
+      overflow:hidden;
+    }
+
+    .glass-card::before{
+      content:'';
+      position:absolute;
+      width:250px;
+      height:250px;
+      background:rgba(255,255,255,0.06);
+      border-radius:50%;
+      top:-120px;
+      right:-80px;
+    }
+
+    .tag{
+      display:inline-block;
+      padding:10px 22px;
+      border-radius:999px;
+      background:rgba(59,130,246,0.15);
+      border:1px solid rgba(59,130,246,0.35);
+      color:#93c5fd;
+      font-size:14px;
+      font-weight:500;
+      letter-spacing:0.5px;
+      margin-bottom:28px;
+    }
+
+    h1{
+      font-size:56px;
+      line-height:1.1;
+      color:white;
+      margin-bottom:25px;
+      font-weight:700;
+    }
+
+    h1 span{
+      background:linear-gradient(to right,#60a5fa,#a78bfa);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    p{
+      color:#cbd5e1;
+      font-size:18px;
+      line-height:1.9;
+      max-width:700px;
+      margin:auto;
+      margin-bottom:40px;
+      font-weight:300;
+    }
+
+    .buttons{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      text-decoration:none;
+      padding:16px 34px;
+      border-radius:16px;
+      font-size:16px;
+      font-weight:600;
+      transition:0.35s ease;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .primary-btn{
+      background:linear-gradient(135deg,#2563eb,#7c3aed);
+      color:white;
+      box-shadow:0 10px 25px rgba(59,130,246,0.35);
+    }
+
+    .primary-btn:hover{
+      transform:translateY(-5px) scale(1.02);
+      box-shadow:0 15px 35px rgba(124,58,237,0.4);
+    }
+
+    .secondary-btn{
+      border:1px solid rgba(255,255,255,0.15);
+      color:#e2e8f0;
+      background:rgba(255,255,255,0.05);
+    }
+
+    .secondary-btn:hover{
+      background:rgba(255,255,255,0.1);
+      transform:translateY(-5px);
+    }
+
+    .footer-text{
+      margin-top:35px;
+      font-size:14px;
+      color:#94a3b8;
+      letter-spacing:0.4px;
+    }
+
+    @media(max-width:768px){
+
+      .glass-card{
+        padding:40px 25px;
+      }
+
+      h1{
+        font-size:38px;
+      }
+
+      p{
+        font-size:16px;
+      }
+
+      .btn{
+        width:100%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="glass-card">
+
+    <div class="tag">
+      SOURCE CODE ACCESS
+    </div>
+
+    <h1>
+      Explore The <span>Project Repository</span>
+    </h1>
+
+    <p>
+      This project is a combination of multiple separate modules, which is why it has not been deployed as a live demo website. However, you can review the complete source code through the repository link provided below.
+    </p>
+
+    <div class="buttons">
+
+      <a href="https://github.com/balaji3245/tailwind-bundle-files"
+         target="_blank"
+         class="btn primary-btn">
+         View Repository
+      </a>
+
+      <a href="#"
+         class="btn secondary-btn">
+         Documentation
+      </a>
+
+    </div>
+
+    <div class="footer-text">
+      Designed & Developed Professionally
+    </div>
+
+  </div>
+
+</body>
+</html>
